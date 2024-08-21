@@ -1,3 +1,5 @@
+/*Este CSS é global, ou seja, é visível para toda a aplicação*/
+
 body {
   max-width: 96%;
   margin: auto;
