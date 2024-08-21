@@ -6,6 +6,7 @@
 - Scss: `npm install sass`;
 - MUI - Material UI: `npm install @mui/material @emotion/react @emotion/styled`;
 - React Icons: `npm install react-icons --save`;
+- Este projeto foi gerado com CRA, se quiser criar com Vite: `npm create vite@latest`e seguir os passos.
 
 ## Tópcios de aula deste repositório:
 ### Aual II:
