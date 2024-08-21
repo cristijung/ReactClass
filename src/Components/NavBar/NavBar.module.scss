@@ -1,9 +1,83 @@
+//variáveis para cores e tamanhos
+$cor-primaria: #053656; 
+$cor-secundaria: #f6d487; 
+$cor-texto: #fff; 
+$tamanho-fonte: 16px;
+$altura-navbar: 60px;
 
-.top {
-    background-color: #000;
-    color: #FFFAFA;
-    font-weight: 500;
-    font-size: 38px;
-    margin-top: 1%;
-    margin-left: 2%;
+.navbar {
+  background-color: $cor-primaria;
+  height: $altura-navbar;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  
+  &__logo {
+    font-size: 1.5em;
+    color: $cor-texto;
+    font-weight: bold;
+  }
+
+  &__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      margin-left: 20px;
+
+      a {
+        text-decoration: none;
+        color: $cor-texto;
+        font-size: $tamanho-fonte;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $cor-secundaria;
+        }
+      }
+    }
+  }
+
+ &__toggle {
+    display: none; 
+    cursor: pointer;
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: $cor-texto;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+  }
+
+ @media (max-width: 768px) {
+    &__links {
+      display: none; 
+    }
+
+    &__toggle {
+      display: block; 
+    }
+
+    &__links--active {
+      display: flex; 
+      flex-direction: column;
+      position: absolute;
+      top: $altura-navbar;
+      left: 0;
+      width: 100%;
+      background-color: $cor-primaria;
+      padding: 20px;
+
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
 }
