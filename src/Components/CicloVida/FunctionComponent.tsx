@@ -3,6 +3,13 @@
 //array de dependência vazio para garantir q ele execute somente 1x e não re-renderize
 
 import { useState, useEffect } from "react";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';   
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';   
+
 
 interface Gato {
     id: string;
@@ -41,17 +48,29 @@ export default function StateExe() {
         {carregando && <p>Carregando ...</p>}
         {erro && <p>{erro}</p>}
         {!carregando && !erro && (
-            <ul>
-                {gatos.map((gato) => (
-                    <li key={gato.id}>
-                        <img src={gato.url} alt='Gatos'/>
-                    </li>
-                ))}
-            </ul>
+          <Container maxWidth="md"> 
+            <Grid container spacing={2}> 
+              {gatos.map((gato) => (
+                <Grid item xs={12} sm={6} md={4} key={gato.id}> 
+                  <Card>
+                    <CardMedia
+                      component="img"
+                      alt="Gato"
+                      height="140"
+                      image={gato.url}
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Gatinho fofo
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
         )}
-        
-        
-        </>
+      </>
     )
    
 

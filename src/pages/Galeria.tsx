@@ -1,8 +1,11 @@
+import GaleriaDeGatos from "../Components/Hooks/ExHookPersonalizado";
 
 export default function Galeria() {
     return(
         <>
-        Esta é a galeria!!
+        <h3>Galeria de Gatitos</h3>
+        <hr/>
+        <GaleriaDeGatos/>
         
         </>
     )
