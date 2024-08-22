@@ -1,0 +1,48 @@
+
+
+.footer {
+    background-color: #f0f0f0; // Cor de fundo suave
+    padding: 30px 0; // Espaçamento interno
+    text-align: center; // Centraliza o conteúdo
+  
+    .container {
+      max-width: 960px; // Largura máxima do conteúdo
+      margin: 0 auto; // Centraliza horizontalmente
+  
+      .logo {
+        margin-bottom: 20px; // Espaço abaixo da logo
+  
+        img {
+          max-width: 150px; // Tamanho máximo da imagem
+        }
+      }
+  
+      .links {
+        ul {
+          list-style: none; // Remove marcadores da lista
+          padding: 0;
+          margin: 0;
+  
+          li {
+            display: inline-block; // Coloca os itens em linha
+            margin: 0 15px; // Espaço entre os itens
+  
+            a {
+              color: #333; // Cor do texto dos links
+              text-decoration: none; // Remove sublinhado
+  
+              &:hover {
+                text-decoration: underline; // Adiciona sublinhado ao passar o mouse
+              }
+            }
+          }
+        }
+      }
+  
+      .copyright {
+        margin-top: 30px; // Espaço acima do copyright
+        font-size: 0.9em; // Tamanho da fonte um pouco menor
+        color: #666; // Cor do texto do copyright
+      }
+    }
+  }

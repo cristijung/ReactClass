@@ -2,7 +2,7 @@ import StateApi from "../Components/Estados/StateApi";
 import StateCounter from "../Components/Estados/StateCount";
 
 
-export default function Artigo() {
+export default function Estados() {
     return(
         <>
         <h3>Página Artigo</h3>
