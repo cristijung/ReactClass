@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from "react";
 import Grid from '@mui/material/Grid';
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
