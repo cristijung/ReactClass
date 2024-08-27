@@ -7,6 +7,7 @@
 - MUI - Material UI: `npm install @mui/material @emotion/react @emotion/styled`;
 - React Icons: `npm install react-icons --save`;
 - Este projeto foi gerado com CRA, se quiser criar com Vite: `npm create vite@latest`e seguir os passos.
+- React i18n: Internacionalização - `npm install i18next react-i18next i18next-http-backend i18next-browser-languagedetector`
 
 ## Tópcios de aula deste repositório:
 ### Aual II:

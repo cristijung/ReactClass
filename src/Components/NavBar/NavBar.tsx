@@ -11,6 +11,7 @@ export default function NavBar() {
             <li><LinkMenu to='/'>Home</LinkMenu></li>
             <li><LinkMenu to='/galeria'>Galeria</LinkMenu></li>
             <li><LinkMenu to='/estados'>Estados</LinkMenu></li>
+            <li><LinkMenu to='/sobrenos'>Sobre Nós</LinkMenu></li>
             <li><LinkMenu to='contato'>Contato</LinkMenu></li>
           </ul>
           <div className={Styles.navbar__toggle}> 
