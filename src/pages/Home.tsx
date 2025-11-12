@@ -1,3 +1,4 @@
+import ToggleButton from "../Components/Btns/ToggleButton";
 import ClassComponent from "../Components/CicloVida/ClassComponent";
 import StateExe from "../Components/CicloVida/FunctionComponent";
 import Review from "../Components/Estados/Review";
@@ -16,6 +17,8 @@ export default function Home() {
         <StateExe/>
         <hr/>
         <ServerComponent/>
+        <hr/>
+        <ToggleButton/>
         
         </>
     )
